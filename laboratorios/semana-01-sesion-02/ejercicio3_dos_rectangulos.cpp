@@ -3,7 +3,7 @@
 // Parte A: un "sistema" de dos rectangulos
 // armado con funciones sueltas y 4 variables independientes. Tiene un bug.
 //
-// TODO (prediccion, escribe tu respuesta como comentario justo aqui):
+// TODO (escribe tu respuesta como comentario justo aqui):
 // En que linea esta el bug, y que deberia decir en su lugar?
 
 // Los errores están en la linea 41 y 42, debería decir std::cout << "Rectangulo 2, Area: " << area(base2, altura2)
