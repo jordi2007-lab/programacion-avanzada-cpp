@@ -35,6 +35,27 @@ std::ostream& operator<<(std::ostream& os, Vector2D v) {
     return os;
 }
 
+template <typename T>
+T sumarArreglo(T datos[], int cantidad){
+    T suma=datos[0];
+
+    for (int i=1; i<cantidad;i++){
+        suma=suma+datos[i];
+    }
+    return suma;
+}
+
+template <typename T>
+int contarMayoresQue(T datos[], int cantidad, T umbral) {
+    int contador = 0;
+    for (int i = 0; i < cantidad; ++i) {
+        if (datos[i] > umbral) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
 // TODO: escribe la plantilla de funcion sumarArreglo(datos, cantidad),
 // que recibe un arreglo de T y su cantidad de elementos y devuelve la
 // suma de todos. Tiene que funcionar para int, double y Vector2D.
