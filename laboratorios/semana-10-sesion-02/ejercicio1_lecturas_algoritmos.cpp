@@ -1,7 +1,8 @@
 #include <iostream>
 #include <list>
 #include <vector>
-
+#include<algorithm>
+#include<numeric>
 // Temperaturas de una semana en el laboratorio. Cada calculo esta escrito
 // con un loop a mano. Corre el archivo antes de cambiar nada.
 
@@ -10,45 +11,28 @@ int main() {
 
     // TODO (paso 1): reemplaza este loop por std::accumulate, de
     // <numeric>, con 0.0 como valor inicial.
-    double suma = 0.0;
-    for (double t : temperaturas) {
-        suma = suma + t;
-    }
+    double suma=std::accumulate(temperaturas.begin(),temperaturas.end(),0.0);
     std::cout << "Suma: " << suma << std::endl;
 
     // TODO (paso 2): reemplaza este loop por std::max_element, de
     // <algorithm>. Ojo: devuelve un iterador, no un valor.
-    double maxima = temperaturas[0];
-    for (double t : temperaturas) {
-        if (t > maxima) {
-            maxima = t;
-        }
-    }
-    std::cout << "Maxima: " << maxima << std::endl;
+    auto maxima=std::max_element(temperaturas.begin(),temperaturas.end());
+    std::cout << "Maxima: " << *maxima << std::endl;
 
     // TODO (paso 3): reemplaza este loop por std::count.
-    int vecesEn23 = 0;
-    for (double t : temperaturas) {
-        if (t == 23.0) {
-            vecesEn23 = vecesEn23 + 1;
-        }
-    }
+    
+    int vecesEn23=std::count(temperaturas.begin(),temperaturas.end(),23.0);
     std::cout << "Dias en 23.0: " << vecesEn23 << std::endl;
 
     // TODO (paso 4): reemplaza este loop por std::find. Si encuentra
     // 25.5, la posicion es la distancia entre el iterador encontrado y
     // temperaturas.begin().
-    int posicion = -1;
-    for (int i = 0; i < 7; i++) {
-        if (temperaturas[i] == 25.5) {
-            posicion = i;
-            break;
-        }
-    }
-    if (posicion == -1) {
+
+    auto posicion=std::find(temperaturas.begin(),temperaturas.end(),25.5);
+    if (posicion == temperaturas.end()) {
         std::cout << "25.5 no aparece" << std::endl;
     } else {
-        std::cout << "25.5 aparece en la posicion " << posicion << std::endl;
+        std::cout << "25.5 aparece en la posicion " << posicion-temperaturas.begin() << std::endl;
     }
 
     // TODO (paso 5): crea una std::list<double> llamada lista con los
@@ -59,6 +43,18 @@ int main() {
 
     // TODO (paso 6): imprime "Suma con 0 como valor inicial: " con
     // std::accumulate(temperaturas.begin(), temperaturas.end(), 0).
+    std::list<double> lista(temperaturas.begin(),temperaturas.end());
 
+    std::cout<<std::endl;
+
+    double lista_suma=std::accumulate(lista.begin(),lista.end(),0.0);
+    std::cout << "Suma (lista): " << suma << std::endl;
+
+    auto lista_maxima=std::max_element(lista.begin(),lista.end());
+    std::cout << "Maxima (lista): " << *maxima << std::endl;
+
+    int lista_vecesEn23=std::count(lista.begin(),lista.end(),23.0);
+    std::cout << "Dias en 23.0 (lista): " << vecesEn23 << std::endl;
+    
     return 0;
 }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
-
+#include<algorithm>
+#include<numeric>
 // Salida esperada:
 // Total recaudado: 146.5
 // Ventas de al menos 20: 3
@@ -51,17 +52,40 @@ int main() {
 
     // TODO: el total recaudado (la suma de getTotal() de todas las
     // ventas). Imprime "Total recaudado: ".
+    double total = std::accumulate(ventas.begin(), ventas.end(), 0.0,[](double acumulado, Venta v) {return acumulado + v.getTotal();});
+    std::cout << "Total recaudado: " << total << std::endl;
 
     // TODO: cuantas ventas tienen un total de al menos umbral. Imprime
-    // "Ventas de al menos 20: ".
+    // "Ventas de al menos 20: "
+    auto cuantas = std::count_if(ventas.begin(), ventas.end(),[umbral](Venta v) {return v.getTotal() >= umbral;});
+    std::cout << "Ventas de al menos 20: " << cuantas << std::endl;
+
 
     // TODO: busca la primera venta del producto 210 e imprime
     // "Primera venta de 210: N unidades". Despues busca una venta del
     // producto 999: si no existe, imprime "No hay ventas de 999". Escribe
     // la busqueda de modo que el codigo buscado sea una variable, no un
     // numero escrito dentro de la lambda.
+    int codigoBuscado = 210;
+    
+    auto it = std::find_if(ventas.begin(), ventas.end(),[codigoBuscado](Venta v) {return v.getCodigo() == codigoBuscado;});
+    
+    if (it != ventas.end()) {
+    std::cout << "Primera venta de " << codigoBuscado << ": "<< it->getCantidad() << " unidades" << std::endl;}
+    else
+    std::cout << "No hay ventas de " << codigoBuscado << std::endl;
+
+    codigoBuscado = 999;
+    it = std::find_if(ventas.begin(), ventas.end(),[codigoBuscado](Venta v) {return v.getCodigo() == codigoBuscado;});
+
+    if (it != ventas.end()) {
+    std::cout << "Primera venta de " << codigoBuscado << ": "<< it->getCantidad() << " unidades" << std::endl;}
+    else
+    std::cout << "No hay ventas de " << codigoBuscado << std::endl;
 
     // TODO: ordena ventas de mayor a menor total.
+    std::sort(ventas.begin(), ventas.end(),[](Venta a, Venta b) {return a.getTotal() > b.getTotal();});
+
 
     std::cout << "Ordenadas por total:";
     for (Venta v : ventas) {
