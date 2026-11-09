@@ -1,0 +1,247 @@
+ .devcontainer/devcontainer.json                                                  |  34 [32m++[m[31m--[m
+ .gitignore                                                                       |  30 [32m++[m[31m--[m
+ LICENSE                                                                          |  42 [32m++[m[31m---[m
+ README.md                                                                        | 138 [32m++++++++[m[31m---------[m
+ laboratorios/semana-01-sesion-01/README.md                                       |  60 [32m++++[m[31m----[m
+ laboratorios/semana-01-sesion-01/ejercicio1_control_flujo                        | Bin [31m0[m -> [32m32360[m bytes
+ laboratorios/semana-01-sesion-01/ejercicio1_control_flujo.cpp                    |  65 [32m++++[m[31m----[m
+ laboratorios/semana-01-sesion-01/ejercicio2_arreglos                             | Bin [31m0[m -> [32m32544[m bytes
+ laboratorios/semana-01-sesion-01/ejercicio2_arreglos.cpp                         |  66 [32m++++[m[31m----[m
+ laboratorios/semana-01-sesion-01/ejercicio3_funciones                            | Bin [31m0[m -> [32m32416[m bytes
+ laboratorios/semana-01-sesion-01/ejercicio3_funciones.cpp                        |  70 [32m+++++[m[31m----[m
+ laboratorios/semana-01-sesion-02/README.md                                       |  78 [32m+++++[m[31m-----[m
+ laboratorios/semana-01-sesion-02/ejercicio1_funciones_sueltas                    | Bin [31m0[m -> [32m32832[m bytes
+ laboratorios/semana-01-sesion-02/ejercicio1_funciones_sueltas.cpp                |  95 [32m++++++[m[31m------[m
+ laboratorios/semana-01-sesion-02/ejercicio2_struct_rectangulo                    | Bin [31m0[m -> [32m33152[m bytes
+ laboratorios/semana-01-sesion-02/ejercicio2_struct_rectangulo.cpp                | 111 [32m+++++++[m[31m-------[m
+ laboratorios/semana-01-sesion-02/ejercicio3_dos_rectangulos                      | Bin [31m0[m -> [32m33744[m bytes
+ laboratorios/semana-01-sesion-02/ejercicio3_dos_rectangulos.cpp                  | 151 [32m++++++++++[m[31m--------[m
+ laboratorios/semana-02-sesion-01/README.md                                       |  72 [32m++++[m[31m-----[m
+ laboratorios/semana-02-sesion-01/ejercicio1_class_rectangulo                     | Bin [31m0[m -> [32m33784[m bytes
+ laboratorios/semana-02-sesion-01/ejercicio1_class_rectangulo.cpp                 | 144 [32m++++++++[m[31m---------[m
+ laboratorios/semana-02-sesion-01/ejercicio2_cuenta_bancaria                      | Bin [31m0[m -> [32m33640[m bytes
+ laboratorios/semana-02-sesion-01/ejercicio2_cuenta_bancaria.cpp                  | 149 [32m++++++++++[m[31m--------[m
+ laboratorios/semana-02-sesion-01/ejercicio3_rango_notas                          | Bin [31m0[m -> [32m33640[m bytes
+ laboratorios/semana-02-sesion-01/ejercicio3_rango_notas.cpp                      | 131 [32m++++++++[m[31m--------[m
+ laboratorios/semana-02-sesion-02/README.md                                       |  68 [32m++++[m[31m----[m
+ laboratorios/semana-02-sesion-02/ejercicio1_rectangulo_constructor               | Bin [31m0[m -> [32m34480[m bytes
+ laboratorios/semana-02-sesion-02/ejercicio1_rectangulo_constructor.cpp           | 189 [32m++++++++++++[m[31m-----------[m
+ laboratorios/semana-02-sesion-02/ejercicio2_cuenta_constructor                   | Bin [31m0[m -> [32m33976[m bytes
+ laboratorios/semana-02-sesion-02/ejercicio2_cuenta_constructor.cpp               | 138 [32m+++++++++[m[31m--------[m
+ laboratorios/semana-02-sesion-02/ejercicio3_termometro                           | Bin [31m0[m -> [32m33872[m bytes
+ laboratorios/semana-02-sesion-02/ejercicio3_termometro.cpp                       | 129 [32m++++++++[m[31m--------[m
+ laboratorios/semana-03-sesion-01/README.md                                       |  68 [32m++++[m[31m----[m
+ laboratorios/semana-03-sesion-01/ejercicio1_vector2d                             | Bin [31m0[m -> [32m33728[m bytes
+ laboratorios/semana-03-sesion-01/ejercicio1_vector2d.cpp                         | 117 [32m+++++++[m[31m-------[m
+ laboratorios/semana-03-sesion-01/ejercicio2_fraccion                             | Bin [31m0[m -> [32m33848[m bytes
+ laboratorios/semana-03-sesion-01/ejercicio2_fraccion.cpp                         | 133 [32m++++++++[m[31m--------[m
+ laboratorios/semana-03-sesion-01/ejercicio3_numero_complejo                      | Bin [31m0[m -> [32m33888[m bytes
+ laboratorios/semana-03-sesion-01/ejercicio3_numero_complejo.cpp                  | 103 [32m+++++++[m[31m------[m
+ laboratorios/semana-03-sesion-02/README.md                                       |  68 [32m++++[m[31m----[m
+ laboratorios/semana-03-sesion-02/ejercicio1_animal_perro_gato                    | Bin [31m0[m -> [32m34616[m bytes
+ laboratorios/semana-03-sesion-02/ejercicio1_animal_perro_gato.cpp                | 152 [32m+++++++++[m[31m---------[m
+ laboratorios/semana-03-sesion-02/ejercicio2_vehiculo_carro_moto                  | Bin [31m0[m -> [32m34760[m bytes
+ laboratorios/semana-03-sesion-02/ejercicio2_vehiculo_carro_moto.cpp              | 169 [32m++++++++++[m[31m----------[m
+ laboratorios/semana-03-sesion-02/ejercicio3_empleado_gerente_vendedor            | Bin [31m0[m -> [32m35136[m bytes
+ laboratorios/semana-03-sesion-02/ejercicio3_empleado_gerente_vendedor.cpp        | 193 [32m++++++++++++[m[31m-----------[m
+ laboratorios/semana-04-sesion-01/README.md                                       | 198 [32m++++++++++++[m[31m------------[m
+ laboratorios/semana-04-sesion-01/ejercicio1_dispositivo_multifuncion             | Bin [31m0[m -> [32m37176[m bytes
+ laboratorios/semana-04-sesion-01/ejercicio1_dispositivo_multifuncion.cpp         | 168 [32m++++++++++[m[31m----------[m
+ laboratorios/semana-04-sesion-01/ejercicio2_dispositivo_multifuncion_virtual     | Bin [31m0[m -> [32m37192[m bytes
+ laboratorios/semana-04-sesion-01/ejercicio2_dispositivo_multifuncion_virtual.cpp | 170 [32m++++++++++[m[31m----------[m
+ laboratorios/semana-04-sesion-01/ejercicio3_robot_aspiradora                     | Bin [31m0[m -> [32m34584[m bytes
+ laboratorios/semana-04-sesion-01/ejercicio3_robot_aspiradora.cpp                 | 104 [32m+++++++[m[31m------[m
+ laboratorios/semana-04-sesion-02/README.md                                       | 202 [32m++++++++++++[m[31m------------[m
+ laboratorios/semana-04-sesion-02/ejercicio1_carro_motor                          | Bin [31m0[m -> [32m35704[m bytes
+ laboratorios/semana-04-sesion-02/ejercicio1_carro_motor.cpp                      | 173 [32m+++++++++++[m[31m----------[m
+ laboratorios/semana-04-sesion-02/ejercicio2_dron_bateria                         | Bin [31m0[m -> [32m34296[m bytes
+ laboratorios/semana-04-sesion-02/ejercicio2_dron_bateria.cpp                     | 112 [32m++++++++[m[31m------[m
+ laboratorios/semana-04-sesion-02/ejercicio3_impresora_cartucho                   | Bin [31m0[m -> [32m36552[m bytes
+ laboratorios/semana-04-sesion-02/ejercicio3_impresora_cartucho.cpp               | 185 [32m+++++++++++++[m[31m---------[m
+ laboratorios/semana-05-sesion-01/README.md                                       | 194 [32m+++++++++++[m[31m------------[m
+ laboratorios/semana-05-sesion-01/ejercicio0_punteros                             | Bin [31m0[m -> [32m32512[m bytes
+ laboratorios/semana-05-sesion-01/ejercicio0_punteros.cpp                         |  44 [32m+++[m[31m---[m
+ laboratorios/semana-05-sesion-01/ejercicio1_registro_temperaturas_fuga           | Bin [31m0[m -> [32m34704[m bytes
+ laboratorios/semana-05-sesion-01/ejercicio1_registro_temperaturas_fuga.cpp       |  84 [32m+++++[m[31m-----[m
+ laboratorios/semana-05-sesion-01/ejercicio2_registro_temperaturas_raii           | Bin [31m0[m -> [32m34704[m bytes
+ laboratorios/semana-05-sesion-01/ejercicio2_registro_temperaturas_raii.cpp       |  80 [32m+++++[m[31m-----[m
+ laboratorios/semana-05-sesion-01/ejercicio3_registro_de_vuelo                    | Bin [31m0[m -> [32m34736[m bytes
+ laboratorios/semana-05-sesion-01/ejercicio3_registro_de_vuelo.cpp                |  90 [32m++++++[m[31m-----[m
+ laboratorios/semana-05-sesion-02/README.md                                       | 188 [32m+++++++++++[m[31m------------[m
+ laboratorios/semana-05-sesion-02/ejercicio1_puntero_colgante                     | Bin [31m0[m -> [32m32392[m bytes
+ laboratorios/semana-05-sesion-02/ejercicio1_puntero_colgante.cpp                 | 101 [32m++++++[m[31m------[m
+ laboratorios/semana-05-sesion-02/ejercicio2_puntero_seguro                       | Bin [31m0[m -> [32m32568[m bytes
+ laboratorios/semana-05-sesion-02/ejercicio2_puntero_seguro.cpp                   |  41 [32m++[m[31m---[m
+ laboratorios/semana-05-sesion-02/ejercicio3_inventario                           | Bin [31m0[m -> [32m33928[m bytes
+ laboratorios/semana-05-sesion-02/ejercicio3_inventario.cpp                       | 120 [32m+++++++[m[31m--------[m
+ laboratorios/semana-06-sesion-01/README.md                                       | 204 [32m++++++++++++[m[31m------------[m
+ laboratorios/semana-06-sesion-01/ejercicio1_copiar_es_peligroso.cpp              |  86 [32m+++++[m[31m------[m
+ laboratorios/semana-06-sesion-01/ejercicio2_mover_es_seguro                      | Bin [31m0[m -> [32m35776[m bytes
+ laboratorios/semana-06-sesion-01/ejercicio2_mover_es_seguro.cpp                  | 135 [32m+++++++++[m[31m-------[m
+ laboratorios/semana-06-sesion-01/ejercicio3_bitacora_de_vuelo                    | Bin [31m0[m -> [32m35784[m bytes
+ laboratorios/semana-06-sesion-01/ejercicio3_bitacora_de_vuelo.cpp                | 123 [32m++++++++++[m[31m-----[m
+ laboratorios/semana-06-sesion-02/README.md                                       | 192 [32m+++++++++++[m[31m------------[m
+ laboratorios/semana-06-sesion-02/ejercicio1_inventario_con_unique_ptr            | Bin [31m0[m -> [32m53480[m bytes
+ laboratorios/semana-06-sesion-02/ejercicio1_inventario_con_unique_ptr.cpp        | 106 [32m++++++[m[31m-------[m
+ laboratorios/semana-06-sesion-02/ejercicio2_registro_compartido                  | Bin [31m0[m -> [32m120520[m bytes
+ laboratorios/semana-06-sesion-02/ejercicio2_registro_compartido.cpp              | 173 [32m+++++++++++[m[31m----------[m
+ laboratorios/semana-06-sesion-02/ejercicio3_sensores_de_temperatura              | Bin [31m0[m -> [32m121536[m bytes
+ laboratorios/semana-06-sesion-02/ejercicio3_sensores_de_temperatura.cpp          | 131 [32m++++++++++[m[31m------[m
+ laboratorios/semana-07-sesion-01/README.md                                       | 142 [32m++++++++[m[31m---------[m
+ laboratorios/semana-07-sesion-01/sistema_flota_drones                            | Bin [31m0[m -> [32m131304[m bytes
+ laboratorios/semana-07-sesion-01/sistema_flota_drones.cpp                        | 588 [32m+++++++++++++++++++++++++++++++++++++++++++[m[31m---------------------------[m
+ laboratorios/semana-08-sesion-02/README.md                                       | 216 [32m+++++++++++++[m[31m-------------[m
+ laboratorios/semana-08-sesion-02/ejercicio1_figuras_sin_virtual                  | Bin [31m0[m -> [32m70384[m bytes
+ laboratorios/semana-08-sesion-02/ejercicio1_figuras_sin_virtual.cpp              | 129 [32m+++++++++[m[31m-------[m
+ laboratorios/semana-08-sesion-02/ejercicio2_nomina_override                      | Bin [31m0[m -> [32m71688[m bytes
+ laboratorios/semana-08-sesion-02/ejercicio2_nomina_override.cpp                  | 178 [32m++++++++++[m[31m-----------[m
+ laboratorios/semana-08-sesion-02/ejercicio3_notificaciones                       | Bin [31m0[m -> [32m179928[m bytes
+ laboratorios/semana-08-sesion-02/ejercicio3_notificaciones.cpp                   | 195 [32m++++++++++++++[m[31m---------[m
+ laboratorios/semana-09-sesion-01/README.md                                       | 188 [32m+++++++++++[m[31m------------[m
+ laboratorios/semana-09-sesion-01/ejercicio1_figura_abstracta                     | Bin [31m0[m -> [32m154936[m bytes
+ laboratorios/semana-09-sesion-01/ejercicio1_figura_abstracta.cpp                 | 190 [32m+++++++++++[m[31m------------[m
+ laboratorios/semana-09-sesion-01/ejercicio2_estacion_meteorologica               | Bin [31m0[m -> [32m149568[m bytes
+ laboratorios/semana-09-sesion-01/ejercicio2_estacion_meteorologica.cpp           | 240 [32m+++++++++++++++++++[m[31m----------[m
+ laboratorios/semana-09-sesion-01/ejercicio3_dispositivos_oficina                 | Bin [31m0[m -> [32m75584[m bytes
+ laboratorios/semana-09-sesion-01/ejercicio3_dispositivos_oficina.cpp             | 237 [32m++++++++++++++[m[31m--------------[m
+ laboratorios/semana-09-sesion-02/README.md                                       | 180 [32m+++++++++++[m[31m-----------[m
+ laboratorios/semana-09-sesion-02/ejercicio1_mayor_template                       | Bin [31m0[m -> [32m69904[m bytes
+ laboratorios/semana-09-sesion-02/ejercicio1_mayor_template.cpp                   | 155 [32m+++++++++[m[31m----------[m
+ laboratorios/semana-09-sesion-02/ejercicio2_funciones_arreglo                    | Bin [31m0[m -> [32m70304[m bytes
+ laboratorios/semana-09-sesion-02/ejercicio2_funciones_arreglo.cpp                | 139 [32m++++++++++[m[31m-------[m
+ laboratorios/semana-09-sesion-02/ejercicio3_historial_template                   | Bin [31m0[m -> [32m142960[m bytes
+ laboratorios/semana-09-sesion-02/ejercicio3_historial_template.cpp               | 146 [32m+++++++++++[m[31m-------[m
+ laboratorios/semana-10-sesion-01/README.md                                       | 224 [32m+++++++++++++[m[31m--------------[m
+ laboratorios/semana-10-sesion-01/ejercicio1_historial_vector                     | Bin [31m0[m -> [32m118696[m bytes
+ laboratorios/semana-10-sesion-01/ejercicio1_historial_vector.cpp                 | 167 [32m++++++++++[m[31m----------[m
+ laboratorios/semana-10-sesion-01/ejercicio2_cola_impresion                       | Bin [31m0[m -> [32m104832[m bytes
+ laboratorios/semana-10-sesion-01/ejercicio2_cola_impresion.cpp                   | 182 [32m++++++++++++[m[31m----------[m
+ laboratorios/semana-10-sesion-01/ejercicio3_bodega                               | Bin [31m0[m -> [32m238328[m bytes
+ laboratorios/semana-10-sesion-01/ejercicio3_bodega.cpp                           | 251 [32m+++++++++++++++++++[m[31m-----------[m
+ laboratorios/semana-10-sesion-02/README.md                                       | 212 [32m++++++++++++[m[31m-------------[m
+ laboratorios/semana-10-sesion-02/ejercicio1_lecturas_algoritmos                  | Bin [31m0[m -> [32m149848[m bytes
+ laboratorios/semana-10-sesion-02/ejercicio1_lecturas_algoritmos.cpp              | 124 [32m++++++++[m[31m-------[m
+ laboratorios/semana-10-sesion-02/ejercicio2_pasos_predicados                     | Bin [31m0[m -> [32m149752[m bytes
+ laboratorios/semana-10-sesion-02/ejercicio2_pasos_predicados.cpp                 | 109 [32m++++++++[m[31m-----[m
+ laboratorios/semana-10-sesion-02/ejercicio3_ventas_algoritmos                    | Bin [31m0[m -> [32m146176[m bytes
+ laboratorios/semana-10-sesion-02/ejercicio3_ventas_algoritmos.cpp                | 170 [32m+++++++++++[m[31m---------[m
+ laboratorios/semana-11-sesion-01/ejercicio1_lecturas_sensor                      | Bin [31m0[m -> [32m110872[m bytes
+ laboratorios/semana-11-sesion-01/ejercicio1_lecturas_sensor.cpp                  |  28 [32m+++[m[31m-[m
+ laboratorios/semana-11-sesion-01/ejercicio2_bodega_excepciones                   | Bin [31m0[m -> [32m162312[m bytes
+ laboratorios/semana-11-sesion-01/ejercicio2_bodega_excepciones.cpp               |  31 [32m++[m[31m--[m
+ laboratorios/semana-11-sesion-01/ejercicio3_horno_lote                           | Bin [31m0[m -> [32m71672[m bytes
+ laboratorios/semana-11-sesion-01/ejercicio3_horno_lote.cpp                       |  26 [32m++[m[31m--[m
+ laboratorios/semana-11-sesion-02/ejercicio1_camara_de_frio                       | Bin [31m0[m -> [32m188832[m bytes
+ laboratorios/semana-11-sesion-02/ejercicio1_camara_de_frio.cpp                   |  19 [32m++[m[31m-[m
+ laboratorios/semana-11-sesion-02/ejercicio2_catalogo_optional                    | Bin [31m0[m -> [32m134088[m bytes
+ laboratorios/semana-11-sesion-02/ejercicio2_catalogo_optional.cpp                |  33 [32m++[m[31m--[m
+ laboratorios/semana-11-sesion-02/ejercicio3_estacionamiento                      | Bin [31m0[m -> [32m234216[m bytes
+ laboratorios/semana-11-sesion-02/ejercicio3_estacionamiento.cpp                  |  74 [32m++++++[m[31m---[m
+ laboratorios/semana-12-sesion-01/README.md                                       | 130 [31m----------------[m
+ laboratorios/semana-12-sesion-01/bodega.h                                        |  43 [31m------[m
+ laboratorios/semana-12-sesion-01/ejercicio1_test_estacionamiento.cpp             |  29 [31m----[m
+ laboratorios/semana-12-sesion-01/ejercicio2_test_bodega.cpp                      |  29 [31m----[m
+ laboratorios/semana-12-sesion-01/ejercicio3/test_tarifa.cpp                      |  24 [31m---[m
+ laboratorios/semana-12-sesion-01/ejercicio3/version_a/tarifa.h                   |  18 [31m---[m
+ laboratorios/semana-12-sesion-01/ejercicio3/version_b/tarifa.h                   |  18 [31m---[m
+ laboratorios/semana-12-sesion-01/ejercicio3/version_c/tarifa.h                   |  18 [31m---[m
+ laboratorios/semana-12-sesion-01/ejercicio3/version_d/tarifa.h                   |  15 [31m--[m
+ laboratorios/semana-12-sesion-01/estacionamiento.h                               |  61 [31m--------[m
+ laboratorios/semana-12-sesion-02/README.md                                       | 142 [31m-----------------[m
+ laboratorios/semana-12-sesion-02/ejercicio1/CMakeLists.txt                       |  21 [31m---[m
+ laboratorios/semana-12-sesion-02/ejercicio1/estacionamiento.h                    |  61 [31m--------[m
+ laboratorios/semana-12-sesion-02/ejercicio1/main.cpp                             |  46 [31m------[m
+ laboratorios/semana-12-sesion-02/ejercicio1/reporte_tiempos.cpp                  |  81 [31m----------[m
+ laboratorios/semana-12-sesion-02/ejercicio1/test_estacionamiento.cpp             |  46 [31m------[m
+ laboratorios/semana-12-sesion-02/ejercicio2/CMakeLists.txt                       |  22 [31m---[m
+ laboratorios/semana-12-sesion-02/ejercicio2/lecturas.h                           |  21 [31m---[m
+ laboratorios/semana-12-sesion-02/ejercicio2/main.cpp                             |  23 [31m---[m
+ laboratorios/semana-12-sesion-02/ejercicio2/test_lecturas.cpp                    |  25 [31m---[m
+ laboratorios/semana-12-sesion-02/ejercicio3/cola_impresion.h                     |  55 [31m-------[m
+ laboratorios/semana-12-sesion-02/ejercicio3/main.cpp                             |  29 [31m----[m
+ main                                                                             | Bin [31m0[m -> [32m31800[m bytes
+ main.cpp                                                                         |  25 [32m+[m[31m--[m
+ psets/README.md                                                                  |  10 [32m+[m[31m-[m
+ psets/pset-01/README.md                                                          | 122 [32m+++++++[m[31m--------[m
+ psets/pset-01/ejercicio10_reserva_sala                                           | Bin [31m0[m -> [32m35976[m bytes
+ psets/pset-01/ejercicio10_reserva_sala.cpp                                       | 175 [32m+++++++++++[m[31m----------[m
+ psets/pset-01/ejercicio11_escalera                                               | Bin [31m0[m -> [32m32616[m bytes
+ psets/pset-01/ejercicio11_escalera.cpp                                           |  69 [32m++++++[m[31m---[m
+ psets/pset-01/ejercicio12_casillero                                              | Bin [31m0[m -> [32m34896[m bytes
+ psets/pset-01/ejercicio12_casillero.cpp                                          |  87 [32m+++++++[m[31m----[m
+ psets/pset-01/ejercicio13_ascensor                                               | Bin [31m0[m -> [32m35184[m bytes
+ psets/pset-01/ejercicio13_ascensor.cpp                                           | 104 [32m+++++++++[m[31m----[m
+ psets/pset-01/ejercicio14_bombilla                                               | Bin [31m0[m -> [32m32936[m bytes
+ psets/pset-01/ejercicio14_bombilla.cpp                                           |  85 [32m++++++[m[31m----[m
+ psets/pset-01/ejercicio15_sesion_estudio                                         | Bin [31m0[m -> [32m35848[m bytes
+ psets/pset-01/ejercicio15_sesion_estudio.cpp                                     | 146 [32m++++++++++++[m[31m------[m
+ psets/pset-01/ejercicio1_circulo                                                 | Bin [31m0[m -> [32m32520[m bytes
+ psets/pset-01/ejercicio1_circulo.cpp                                             |  66 [32m++++[m[31m----[m
+ psets/pset-01/ejercicio2_contador_regresivo                                      | Bin [31m0[m -> [32m32624[m bytes
+ psets/pset-01/ejercicio2_contador_regresivo.cpp                                  |  87 [32m++++++[m[31m-----[m
+ psets/pset-01/ejercicio3_punto_cartesiano                                        | Bin [31m0[m -> [32m32928[m bytes
+ psets/pset-01/ejercicio3_punto_cartesiano.cpp                                    |  82 [32m+++++[m[31m-----[m
+ psets/pset-01/ejercicio4_termostato                                              | Bin [31m0[m -> [32m32888[m bytes
+ psets/pset-01/ejercicio4_termostato.cpp                                          |  75 [32m++++[m[31m-----[m
+ psets/pset-01/ejercicio5_bateria                                                 | Bin [31m0[m -> [32m34936[m bytes
+ psets/pset-01/ejercicio5_bateria.cpp                                             | 102 [32m++++++[m[31m------[m
+ psets/pset-01/ejercicio6_horario_atencion                                        | Bin [31m0[m -> [32m35336[m bytes
+ psets/pset-01/ejercicio6_horario_atencion.cpp                                    | 126 [32m+++++++[m[31m--------[m
+ psets/pset-01/ejercicio7_cronometro                                              | Bin [31m0[m -> [32m32888[m bytes
+ psets/pset-01/ejercicio7_cronometro.cpp                                          |  71 [32m++++[m[31m-----[m
+ psets/pset-01/ejercicio8_extintor                                                | Bin [31m0[m -> [32m32992[m bytes
+ psets/pset-01/ejercicio8_extintor.cpp                                            |  95 [32m++++++[m[31m------[m
+ psets/pset-01/ejercicio9_vela_encendida                                          | Bin [31m0[m -> [32m33232[m bytes
+ psets/pset-01/ejercicio9_vela_encendida.cpp                                      |  77 [32m+++++[m[31m-----[m
+ psets/pset-02/README.md                                                          | 144 [32m++++++++[m[31m---------[m
+ psets/pset-02/ejercicio10_figura_circulo                                         | Bin [31m0[m -> [32m33632[m bytes
+ psets/pset-02/ejercicio10_figura_circulo.cpp                                     | 119 [32m+++++++[m[31m-------[m
+ psets/pset-02/ejercicio11_punteros_basicos                                       | Bin [31m0[m -> [32m32176[m bytes
+ psets/pset-02/ejercicio11_punteros_basicos.cpp                                   |  56 [32m+++[m[31m----[m
+ psets/pset-02/ejercicio12_new_delete_basico                                      | Bin [31m0[m -> [32m32400[m bytes
+ psets/pset-02/ejercicio12_new_delete_basico.cpp                                  |  65 [32m++++[m[31m----[m
+ psets/pset-02/ejercicio13_almacen_notas                                          | Bin [31m0[m -> [32m34440[m bytes
+ psets/pset-02/ejercicio13_almacen_notas.cpp                                      | 116 [32m++++++++[m[31m------[m
+ psets/pset-02/ejercicio14_buffer                                                 | Bin [31m0[m -> [32m34352[m bytes
+ psets/pset-02/ejercicio14_buffer.cpp                                             | 120 [32m++++++++[m[31m-------[m
+ psets/pset-02/ejercicio15_registro_temperaturas                                  | Bin [31m0[m -> [32m34824[m bytes
+ psets/pset-02/ejercicio15_registro_temperaturas.cpp                              | 163 [32m+++++++++++[m[31m---------[m
+ psets/pset-02/ejercicio16_empleado_gerente                                       | Bin [31m0[m -> [32m33376[m bytes
+ psets/pset-02/ejercicio16_empleado_gerente.cpp                                   | 104 [32m+++++++++[m[31m----[m
+ psets/pset-02/ejercicio17_dispositivo_sensor                                     | Bin [31m0[m -> [32m36376[m bytes
+ psets/pset-02/ejercicio17_dispositivo_sensor.cpp                                 | 169 [32m+++++++++++++++[m[31m-----[m
+ psets/pset-02/ejercicio18_componente_robot                                       | Bin [31m0[m -> [32m39544[m bytes
+ psets/pset-02/ejercicio18_componente_robot.cpp                                   | 181 [32m++++++++++++++++[m[31m------[m
+ psets/pset-02/ejercicio19_bateria_dron                                           | Bin [31m0[m -> [32m35576[m bytes
+ psets/pset-02/ejercicio19_bateria_dron.cpp                                       | 126 [32m+++++++++++[m[31m----[m
+ psets/pset-02/ejercicio1_vehiculo_auto                                           | Bin [31m0[m -> [32m33552[m bytes
+ psets/pset-02/ejercicio1_vehiculo_auto.cpp                                       | 118 [32m+++++++[m[31m-------[m
+ psets/pset-02/ejercicio20_temperatura                                            | Bin [31m0[m -> [32m33464[m bytes
+ psets/pset-02/ejercicio20_temperatura.cpp                                        |  96 [32m++++++++[m[31m----[m
+ psets/pset-02/ejercicio21_cola                                                   | Bin [31m0[m -> [32m36368[m bytes
+ psets/pset-02/ejercicio21_cola.cpp                                               | 113 [32m++++++++++[m[31m----[m
+ psets/pset-02/ejercicio22_historial                                              | Bin [31m0[m -> [32m34552[m bytes
+ psets/pset-02/ejercicio22_historial.cpp                                          | 120 [32m+++++++++++[m[31m----[m
+ psets/pset-02/ejercicio23_llave_cerradura                                        | Bin [31m0[m -> [32m29800[m bytes
+ psets/pset-02/ejercicio23_llave_cerradura.cpp                                    | 138 [32m++++++++++++[m[31m-----[m
+ psets/pset-02/ejercicio24_documento_observador                                   | Bin [31m0[m -> [32m98368[m bytes
+ psets/pset-02/ejercicio24_documento_observador.cpp                               | 193 [32m++++++++++++++++[m[31m-------[m
+ psets/pset-02/ejercicio25_vehiculo_titulo                                        | Bin [31m0[m -> [32m122832[m bytes
+ psets/pset-02/ejercicio25_vehiculo_titulo.cpp                                    | 288 [32m++++++++++++++++++++++++[m[31m----------[m
+ psets/pset-02/ejercicio2_servivo_animal_perro                                    | Bin [31m0[m -> [32m36144[m bytes
+ psets/pset-02/ejercicio2_servivo_animal_perro.cpp                                | 152 [32m+++++++++[m[31m---------[m
+ psets/pset-02/ejercicio3_volador_nadador_anfibio                                 | Bin [31m0[m -> [32m34240[m bytes
+ psets/pset-02/ejercicio3_volador_nadador_anfibio.cpp                             | 147 [32m++++++++++[m[31m--------[m
+ psets/pset-02/ejercicio4_maquina_hibrida                                         | Bin [31m0[m -> [32m39192[m bytes
+ psets/pset-02/ejercicio4_maquina_hibrida.cpp                                     | 188 [32m++++++++++++[m[31m-----------[m
+ psets/pset-02/ejercicio5_motor_carro                                             | Bin [31m0[m -> [32m33992[m bytes
+ psets/pset-02/ejercicio5_motor_carro.cpp                                         | 125 [32m++++++++[m[31m-------[m
+ psets/pset-02/ejercicio6_lapiz_estuche                                           | Bin [31m0[m -> [32m35496[m bytes
+ psets/pset-02/ejercicio6_lapiz_estuche.cpp                                       | 113 [32m+++++++[m[31m-------[m
+ psets/pset-02/ejercicio7_vector2d                                                | Bin [31m0[m -> [32m33488[m bytes
+ psets/pset-02/ejercicio7_vector2d.cpp                                            |  87 [32m++++++[m[31m-----[m
+ psets/pset-02/ejercicio8_fraccion                                                | Bin [31m0[m -> [32m33376[m bytes
+ psets/pset-02/ejercicio8_fraccion.cpp                                            | 102 [32m++++++[m[31m------[m
+ psets/pset-02/ejercicio9_dinero                                                  | Bin [31m0[m -> [32m33424[m bytes
+ psets/pset-02/ejercicio9_dinero.cpp                                              | 103 [32m+++++++[m[31m------[m
+ 246 files changed, 8998 insertions(+), 7949 deletions(-)
