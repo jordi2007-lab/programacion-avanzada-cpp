@@ -1,0 +1,4 @@
+PromedioMovil.PrimerPromedioDeTres 0 0
+PromedioMovil.VentanaDeUnoDevuelveLasMismasLecturas 1 0.0194681
+---
+PromedioMovil.PrimerPromedioDeTres
