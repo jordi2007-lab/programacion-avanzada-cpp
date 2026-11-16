@@ -44,7 +44,6 @@
 class Taquilla {
     private:
     std::vector<int> duenos;
-    int cantidadVendidos = 0;
     std::mutex candado;
 
     bool existe(int asiento) {
@@ -52,41 +51,42 @@ class Taquilla {
     }
 
     public:
-    Taquilla(int asientos) : duenos(asientos, 0) {}
+    Taquilla(int asientos) {
+        duenos = std::vector<int>(asientos, 0);}
 
     bool reservar(int asiento, int comprador) {
         std::lock_guard<std::mutex> guardia(candado);
         if (!existe(asiento) or duenos[asiento] != 0) {
-            return false;
+            return false;}
+
+            duenos[asiento] = comprador;
+            return true;
         }
-        duenos[asiento] = comprador;
-        cantidadVendidos = cantidadVendidos + 1;
-        return true;
-    }
 
     bool reservarPar(int a, int b, int comprador) {
         std::lock_guard<std::mutex> guardia(candado);
-        if (a == b or !existe(a) or !existe(b) or duenos[a] != 0 or duenos[b] != 0) {
-            return false;
+        if (!existe(a) or !existe(b) or duenos[a] != 0 or duenos[b] != 0) {
+            return false;}
+            duenos[a] = comprador;
+            duenos[b] = comprador;
+            return true;
         }
-        duenos[a] = comprador;
-        duenos[b] = comprador;
-        cantidadVendidos = cantidadVendidos + 2;
-        return true;
-    }
 
     int duenoDe(int asiento) {
         std::lock_guard<std::mutex> guardia(candado);
         if (!existe(asiento)) {
-            return 0;
-        }
-        return duenos[asiento];
-    }
+            return 0;}
+
+        return duenos[asiento];}
 
     int vendidos() {
         std::lock_guard<std::mutex> guardia(candado);
-        return cantidadVendidos;
-    }
+        int cuenta = 0;
+        for (int i = 0; i < (int)duenos.size(); i++) {
+            if (duenos[i] != 0) {
+                cuenta = cuenta + 1;}}
+            return cuenta;
+        }
 };
 
 void vendedor(Taquilla* taquilla, int comprador, int* logradas) {
