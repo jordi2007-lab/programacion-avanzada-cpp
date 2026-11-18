@@ -35,7 +35,7 @@ class TarjetaAtomica {
         }
 
         // Cada linea es atomica por separado. El metodo completo, no.
-        void cobrarIngenuo(int monto) {
+        void cobrarIngenuo(int monto){
             if (saldo >= monto) {
                 saldo -= monto;
                 aceptados++;
@@ -46,6 +46,17 @@ class TarjetaAtomica {
 
         // Cobra monto solo si alcanza, sin mutex.
         void cobrar(int monto) {
+            int actual=saldo;
+
+            while(true){
+            if (actual<monto){
+                rechazados++;
+                return;
+            }
+                if (saldo.compare_exchange_weak(actual, actual-monto)){
+                    aceptados++;
+                    return;
+            }}
             // TODO 1: lee el saldo en una variable local (int actual = saldo;).
             // 2: en un ciclo: si actual < monto, cuenta un rechazo y sale.
             // Si no, intenta saldo.compare_exchange_weak(actual, actual - monto):
